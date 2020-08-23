@@ -11,7 +11,18 @@ repos.
 
 == Packages
 
-Ain't nobody here but us chickens… for now.
+The overlay contains the following packages:
+
+[%header,cols="3,8,1"]
+|===
+| Name
+| Description
+| Link
+
+| sys-boot/gummiboot
+| Simple UEFI boot manager.
+| https://pkgs.alpinelinux.org/package/edge/main/x86_64/gummiboot[→]
+|===
 
 == Installation
 

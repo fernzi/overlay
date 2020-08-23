@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<upstream>
+		<doc lang="en">https://web.archive.org/web/20150609234007/http://freedesktop.org/wiki/Software/gummiboot/</doc>
+	</upstream>
+</pkgmetadata>
