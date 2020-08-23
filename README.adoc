@@ -1,0 +1,29 @@
+= Fern's Gentoo Overlay
+
+// References
+:gentoo: https://gentoo.org
+:layman: https://wiki.gentoo.org/wiki/Layman
+:eselect: https://wiki.gentoo.org/wiki/Eselect/Repository
+
+Heyo! You've found my overlay for {gentoo}[Gentoo Linux]! It includes
+mostly personal stuff and some other goodies missing from the official
+repos.
+
+== Packages
+
+Ain't nobody here but us chickens… for now.
+
+== Installation
+
+You can add this overlay using either {layman}[Layman] or the new and
+fancy {eselect}[eselect-repository]:
+
+[source,sh]
+----
+# Install eselect-repo and create a repo directory if it doesn't exist
+emerge -a app-eselect/eselect-repository
+mkdir -p /etc/portage/repos.conf
+
+# And then add the best overlay ever
+eselect repository add fernzi git https://github.com/fernzi/gentoo-overlay.git
+----
