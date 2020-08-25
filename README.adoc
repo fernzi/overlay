@@ -22,6 +22,10 @@ The overlay contains the following packages:
 | sys-boot/gummiboot
 | Simple UEFI boot manager.
 | https://pkgs.alpinelinux.org/package/edge/main/x86_64/gummiboot[→]
+
+| sys-process/snooze
+| Run a command at a particular time.
+| https://github.com/leahneukirchen/snooze[→]
 |===
 
 == Installation
