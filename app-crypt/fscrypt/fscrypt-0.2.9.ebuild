@@ -75,7 +75,7 @@ src_install() {
 	emake \
 		DESTDIR="${D}" \
 		PREFIX="${EPREFIX}/usr" \
-		PAM_MODULE_DIR="${EPREFIX}/usr/$(get_libdir)/security" \
+		PAM_MODULE_DIR="${EPREFIX}/$(get_libdir)/security" \
 		install
 	einstalldocs
 	rm -rf "${D}/usr/share/pam-configs"
