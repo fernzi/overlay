@@ -72,7 +72,11 @@ DOCS=(
 )
 
 src_install() {
-	emake DESTDIR="${D}" PREFIX="${EPREFIX}/usr" install
+	emake \
+		DESTDIR="${D}" \
+		PREFIX="${EPREFIX}/usr" \
+		PAM_MODULE_DIR="${EPREFIX}/usr/$(get_libdir)/security" \
+		install
 	einstalldocs
 	rm -rf "${D}/usr/share/pam-configs"
 	dopamd "${FILESDIR}"/fscrypt
