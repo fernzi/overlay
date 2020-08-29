@@ -19,6 +19,10 @@ The overlay contains the following packages:
 | Description
 | Link
 
+| app-crypt/fscrypt
+| Tool for managing Linux filesystem encryption.
+| https://github.com/google/fscrypt[→]
+
 | sys-boot/gummiboot
 | Simple UEFI boot manager.
 | https://pkgs.alpinelinux.org/package/edge/main/x86_64/gummiboot[→]
