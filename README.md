@@ -1,5 +1,8 @@
 # Fern’s Gentoo Overlay
 
+[![License](https://img.shields.io/github/license/fernzi/overlay?label=License)](LICENSE)
+[![PKGCheck](https://github.com/fernzi/overlay/actions/workflows/pkgcheck.yml/badge.svg)][gh-act]
+
 Heyo! You’ve found my repository (or overlay) for Gentoo! 
 It includes mostly personal stuff and some other things 
 missing from the official repos, maybe.
@@ -16,3 +19,5 @@ emerge -a app-eselect/eselect-repository dev-vcs/git
 eselect repository add fernzi git https://github.com/fernzi/overlay.git
 emaint sync -r fernzi
 ```
+
+[gh-act]: https://github.com/fernzi/overlay/actions/workflows/pkgcheck.yml
