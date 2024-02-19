@@ -7,7 +7,7 @@ EAPI=8
 
 DESCRIPTION="Static type checker for Python"
 HOMEPAGE="https://github.com/microsoft/pyright"
-SRC_URI="https://registry.npmjs.org/${PN}/-/${P}.tgz"
+SRC_URI="mirror://npm/${PN}/-/${P}.tgz"
 S="${WORKDIR}/package"
 
 LICENSE="MIT"
