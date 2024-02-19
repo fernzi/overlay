@@ -1,0 +1,29 @@
+name: PKGCheck
+
+on:
+  pull_request:
+    branches:
+      - master
+    paths-ignore:
+      - '**.md'
+      - 'LICENSE*'
+      - '.gitignore'
+      - '.editorconfig'
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - '**.md'
+      - 'LICENSE*'
+      - '.gitignore'
+      - '.editorconfig'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pkgcore/pkgcheck-action@v1
+        with:
+          args: --keywords=-RedundantVersion,-NonsolvableDepsInDev
